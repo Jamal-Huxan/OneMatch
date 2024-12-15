@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OneMatch - Landing Page</title>
+    <style>
+        /* Basic Styles */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        /* Gradient Text */
+        .gradient-text {
+            background: linear-gradient(90deg, #ec4899, #8b5cf6);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-bg {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), #340034);
+        }
+
+        .job-card,
+        .value-card {
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.1));
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s;
+        }
+
+        .job-card:hover,
+        .value-card:hover {
+            border-color: #ec4899;
+            transform: scale(1.02);
+        }
+
+        .job-card h3,
+        .value-card h3 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .tags,
+        .button {
+            background-color: rgba(139, 92, 246, 0.2);
+            padding: 5px 10px;
+            color: #d8b4fe;
+            border-radius: 15px;
+            margin: 5px;
+        }
+
+        .job-card .button,
+        .value-card .button {
+            width: 100%;
+            background: linear-gradient(90deg, #ec4899, #8b5cf6);
+            padding: 10px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .job-listing {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .job-card img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        /* Value Section */
+        .value-card .icon {
+            font-size: 3rem;
+            color: #ec4899;
+            margin-bottom: 10px;
+        }
+
+        .value-section .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .section-header {
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            background: linear-gradient(90deg, #ec4899, #8b5cf6);
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(90deg, #8b5cf6, #ec4899);
+        }
+
+        .cta-text {
+            color: #d1d5db;
+            margin-top: 10px;
+        }
+
+        /* Back Button Styles */
+        .back-button {
+            background: linear-gradient(90deg, #ec4899, #8b5cf6);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-top: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            transform: translateX(-10px);
+            background: linear-gradient(90deg, #8b5cf6, #ec4899);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Fun Back Button -->
+        <a href="index.html" class="back-button">Go Back 🔙</a>
+
+        <!-- Employer Value Section -->
+        <section class="section section-bg">
+            <div class="section-header text-center">
+                <h2 class="gradient-text">Stop Wasting Time & Money</h2>
+                <p>Replace your 50 coffee interviews and £20k recruitment fees with one perfect match</p>
+            </div>
+
+            <div class="grid value-section">
+                <!-- Value Card 1 -->
+                <div class="value-card text-center">
+                    <div class="icon">☕</div>
+                    <h3>Save Time</h3>
+                    <p>No more endless coffee chats. Our AI finds your perfect match instantly.</p>
+                </div>
+                <!-- Value Card 2 -->
+                <div class="value-card text-center">
+                    <div class="icon">💰</div>
+                    <h3>Save Money</h3>
+                    <p>Skip the £20k recruitment fees. Pay only for successful matches.</p>
+                </div>
+                <!-- Value Card 3 -->
+                <div class="value-card text-center">
+                    <div class="icon">✅</div>
+                    <h3>Better Matches</h3>
+                    <p>93% success rate with AI-powered culture & skill matching.</p>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button class="cta-button">Start Hiring Better 🚀</button>
+                <p class="cta-text">Join 5,000+ companies already living their best hiring life</p>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
